@@ -1,0 +1,81 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: conic-gradient(
+    rgb(132, 190, 96) 90deg, whitesmoke 90deg 180deg,  lightgray 135deg, rgb(132, 190, 96) 180deg 270deg, whitesmoke 270deg 
+);
+  background-repeat: repeat ;
+  background-size: 80px 80px;
+  background-position: top left;
+}
+
+.top-bar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgb(169, 226, 125);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.top-bar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%; 
+  padding-right: 100px;
+}
+
+.top-bar li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar li a:hover {
+  background-color: beige;
+  color: black;
+}
+
+.my-list {
+  list-style-type: none;
+    
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mySlides img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%; /* or any other value you prefer */
+  border: 15px solid rgb(140, 211, 121); /* or any other color and size you prefer */
+  box-sizing: border-box; 
+  border-radius: 3rem;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5); /* add this line to create a shadow effect */
+}
