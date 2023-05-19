@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iSucc</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iSucc</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" defer>
 </head>
 <body>
-    <div class="top-bar"> <!-- Removed duplicate class name -->
-        <ul> <!-- Moved ul element inside top-bar div -->
-            <li><a href="#">about</a></li>
-            <li><a href="#">collections</a></li>
-            <li><a href="#">delivery</a></li>
-            <li><a href="#">location</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="succ1.png" alt="Garden of iSuccs">
+        <div class="text-overlay">
+          <div class="top-left">weSucc</div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <img src="succ3.png" alt="Succ3">
+        <div class="text-overlay">
+          <div class="top-left">Succa 4 U</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="succ4.png" alt="Succ4">
+        <div class="text-overlay">
+          <div class="top-right">Succ(eed) together</div>
+        </div>
+      </div>
     </div>
+    <div class="column">
+      <div class="container">
+        <img src="succ6.png" alt="Succ6">
+        <div class="text-overlay">
+          <div class="bottom-right">Succ it up buttercup</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="succ7.png" alt="Succ7">
+        <div class="text-overlay">
+          <div class="centered">Succ it</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="container">
+        <img src="succ10.png" alt="Succ10">
+        <div class="text-overlay">
+          <div class="bottom-left">Succs without U</div>
+        </div>
 
-  <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="image1.jpg">
+      </div>
+      <div class="container">
+        <img src="succ2.png" alt="Succ2">
+        <div class="text-overlay">
+          <div class="bottom-right">Successful</div>
+        </div>
+      </div>
+
+      <div class="socialcontainer">
+        <i class="fab fa-facebook-official" id="facebook"></i>
+        <i class="fab fa-twitter" id="twitter"></i>
+        <i class="fab fa-instagram" id="instagram"></i>
+        <i class="fab fa-github" id="github"></i>
   </div>
+      
+    
 
-  <div class="mySlides fade">
-    <img src="image2.jpg">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="image3.jpg">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-</div>
-
-    <div class="checkerboard"></div> 
 </body>
 </html>
