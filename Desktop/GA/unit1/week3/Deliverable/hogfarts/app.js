@@ -6,4 +6,3 @@ if (typeof jQuery == 'undefined'){
 const container = $("#container")
 console.log(container)
 
-//
