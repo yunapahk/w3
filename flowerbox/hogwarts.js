@@ -63,87 +63,60 @@ $ul.append($li);
 $container.append($ul);
 
 // YEAR 4
-// create a table (I was not able to figure out how to make a table that's visible.)
-// Right above your table add an h5 that says 'Spring 2017'
 $($container).append($("<h5>").html("Spring 2017"));
 let $table = $("<table>");
-
-// Inside the table add a thead element
 let $thead = $("<thead>");
 let $tr = $("<tr>");
 let $td = $("<td>");
 let $td1 = $("<td>");
-
-// Inside the thead element add two th elements
-// in the first th add the text Day
-// // in the second th add the text Classes
+// $thead.append($($tr).append($($th).html("Day"), $($th1).html("Classes")));
 $thead
   .append($($tr).append($("<th>").html("Day"), $("<th>").html("Classes")))
   .addClass("Heading");
-
 $table.append($thead);
-
-// Create a tr element and add two td elements inside.
 let $tbody = $("<tbody>");
 $tbody.append(
-
-  // in the first td add the day Monda
-  $("<tr>").append($("<td>").html("M"), $("<td>").html("Transfiguration"))
-);
-
-// in the second td add the classes you are taking ( Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.)
-$tbody.append(
-  $("<tr>").append($("<td>").html("T"), $("<td>").html("Charms"))
-);
-
-// Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days
-$tbody.append(
-  $("<tr>").append($("<td>").html("W"), $("<td>").html("Potions"))
+  //$($tr) Why this variable dont work in line 59 instead to "<tr>" and also   $("<tr>").append($($td).html("Monday"), $($td1).html("History of Magic")) it deletes the previous list
+  $("<tr>").append($("<td>").html("Monday"), $("<td>").html("History of Magic"))
 );
 $tbody.append(
-  $("<tr>").append($("<td>").html("Th"), $("<td>").html("Defense Against the Dark Arts"))
+  $("<tr>").append($("<td>").html("Tuesday"), $("<td>").html("Divination"))
 );
 $tbody.append(
-  $("<tr>").append($("<td>").html("F"), $("<td>").html("Herbology"))
+  $("<tr>").append($("<td>").html("Wednesday"), $("<td>").html("Herbology"))
+);
+$tbody.append(
+  $("<tr>").append($("<td>").html("Thursday"), $("<td>").html("Charms"))
+);
+$tbody.append(
+  $("<tr>").append($("<td>").html("Friday"), $("<td>").html("transfiguration"))
 );
 $table.append($tbody);
 $container.append($table);
 
 // YEAR 5
-// Break your wand! (select the element that contains your wand and remove it)
-$h44.remove();
-
-// Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
+$h42.remove();
 $ul.find('li:contains("butter beer")').remove();
-
-// Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
-let $newWand = $("<h4>").html(`Duct Tape Wand`).insertAfter($h4);
-$newWand.css("color", "indigo");
-
-// Unsure on how to do this
-// Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
-// Have your pet come back (remove your pet from the DOM, put it back in its original location) 
-
-// Year 6
-// Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
-// Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) to prevent showing your secret elements too soon.
+// const $h4 = $("<h4>").addClass("pet").html("owl");
+let $newWand = $("<h4>").html(`Yuna's Wand`).insertAfter($h4);
+$newWand.css("color", "red");
+let $pet = $h4.remove();
+let $itemToMove = $('ul[storage="trunk"] li:nth-child(4)');
+$itemToMove.detach();
+$itemToMove.insertBefore('ul[storage="trunk"] li:nth-child(1)');
+$itemToMove.detach();
+$itemToMove.insertAfter('ul[storage="trunk"] li:nth-child(3)');
+//============================================================//
+//==========================Year 6============================//
 $(".secret").hide("slow").delay(2000);
 const alpha = setTimeout(() => {
   $(".secret").show("slow");
-}, 2000);
-
-// add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
+}, 3000);
 $itemToMove.addClass("cabbage");
-
-// Fix your pet's leash by removing the class of cabbage (be sure to keep your pet's leash's original class)
 $itemToMove.removeClass("cabbage");
-
-// Year 7
-// Update your class schedule to read 'Fall 2018'
+//============================================================//
+//==========================Year 7============================//
 $("#container h5").html("Fall 2018");
-
-// Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
 $ul.prepend($("<li>").text("Butter beer"));
-
-// Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; replace the unodered list's property of trunk with a new property of chest
 $ul.attr("storage", "chest");
+//============================================================//

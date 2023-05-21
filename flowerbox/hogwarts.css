@@ -9,11 +9,3 @@ body {
 ul {
     list-style-type: none;
 }
-
-.th, .td {
-    border: 1px black;
-}
-
-.cabbage {
-    color: chartreuse
-}
