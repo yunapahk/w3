@@ -32,20 +32,33 @@ const $h44 = $("<h44>").addClass("Holly Wand")
 
 
 // YEAR 3
+// Following what you did in previous years, add the following into an unordered list (with the attribute of storage and a value of trunk):
 const $ul = $("<ul>").attr("storage", "trunk");
+
+// butter beer
 let $li = $("<li>").html("butter beer");
 $ul.append($li);
-// $li = $("<li>").addClass("secret");
-// $ul.append($li);
+
+// invisibility cloak (add a class of secret)
 $li = $("<li>").addClass("secret").html("invisibility cloak");
 $ul.append($li);
+
+// magic map (add a class of secret)
 $li = $("<li>").addClass("secret").html("magic map");
 $ul.append($li);
+
+// time turner (add a class of secret)
 $li = $("<li>").addClass("secret").html("time turner");
 $ul.append($li);
+
+// leash (for your pet, be sure to give this list element the same class as you gave your pet)
 $li = $("<li>").addClass("pet").html("leash");
 $ul.append($li);
+
+// Bertie Bott's Every Flavor [Jelly] Beans.
 $li = $("<li>").html(`Bertie Bott's Every Flavor [Jelly] Beans`);
+
+// append the unordered list to your container div
 $ul.append($li);
 $container.append($ul);
 

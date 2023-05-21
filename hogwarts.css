@@ -2,7 +2,10 @@ body {
     background-color: rgb(186, 200, 200);
 }
 
-#myHeading {
-    color: blue;
-    font-size: 24px;
-  }
+.secret {
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
+}
