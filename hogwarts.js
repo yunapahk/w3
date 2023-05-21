@@ -3,14 +3,13 @@ if (typeof jQuery == 'undefined'){
   } else {console.log('I did it! I linked jQuery and this js file!')};
 
 // YEAR 1
-// Query for your div with the id of container and set it to a variable named $container
-const container = $("#container")
-
-// console.log($container);
+// Query for your div with the id of container and set it to a variable named $container and and console.log($container);
+const $container = $("#container")
 console.log($container);
 
 // Create an <h1> element and set it to a variable called $h1 and console log it. Add some text inside the h1 element. Example text: 'Hogwarts'
-const $h1 = $("<h1>").html("Hogwarts");
+const $h1 = $("<h1>").text("Hogwarts");
+console.log($h1);
 $container.append($h1);
 
 
@@ -18,21 +17,18 @@ $container.append($h1);
 // h2 element with your name
 const $h2 = $("<h2>");
 $h2.html("Yuna");
+$container.append($h2)
 
 // h3 element with your house (Hufflepuff, Gryffindor, Ravenclaw or Slytherin )
-$container.append($h2);
 const $h3 = $("<h3>").html("Gryffindor");
 $container.append($h3);
 
 // h4 element with your pet's name. this h4 element should have a class with a value of your pet type (owl, cat, toad, etc)
-const $h4 = $("<h4>").addClass("pet").html("tarantula");
+const $h4 = $("<h4>").addClass("Scabbers").html("Mouse");
 $container.append($h4);
 
 // h4 element with your wand
-const $h42 = $("<h4>").html(
-  "If You Were To Enter The Magical World Of Harry Potter Which Villain Would You Be?"
-);
-$container.append($h42);
+const $h44 = $("<h44>").addClass("Holly Wand")
 
 
 // YEAR 3
@@ -89,7 +85,7 @@ $container.append($table);
 $h42.remove();
 $ul.find('li:contains("butter beer")').remove();
 // const $h4 = $("<h4>").addClass("pet").html("owl");
-let $newWand = $("<h4>").html(`Bijay's Wand`).insertAfter($h4);
+let $newWand = $("<h4>").html(`Yuna's Wand`).insertAfter($h4);
 $newWand.css("color", "red");
 let $pet = $h4.remove();
 let $itemToMove = $('ul[storage="trunk"] li:nth-child(4)');
